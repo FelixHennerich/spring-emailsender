@@ -1,12 +1,12 @@
-package de.hennerich.emailsender
+package de.hennerich.emailsender.email
 
-import org.springframework.beans.factory.annotation.Autowired
-import org.springframework.mail.javamail.JavaMailSender
+import de.hennerich.emailsender.email.EmailConfig
 import org.springframework.mail.SimpleMailMessage
 import org.springframework.stereotype.Service
 
 @Service
 class EmailSenderService {
+
 
     fun sendSimpleEmail(to: String, subject: String, text: String) {
         val emailConfig = EmailConfig()
@@ -18,6 +18,6 @@ class EmailSenderService {
 
         emailSender.send(message)
 
-        println("Emailsend successfully....")
+        println("Email send successfully....")
     }
 }
