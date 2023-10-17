@@ -10,7 +10,8 @@ class EmailsenderApplication
 	fun main(args: Array<String>) {
 		runApplication<EmailsenderApplication>(*args)
 		val EmailSenderService = EmailSenderService()
-		EmailSenderService.sendSimpleEmail("christine.hennerich@yahoo.de", "Test", "Hallo das ist ein toller test....")
+
+		EmailSenderService.sendSimpleEmail(args[0] + "@" + args[1], "Email-Reset", "Hier erhalten sie einen Link zum zurücksetzten ihrer Email")
 	}
 
 
