@@ -12,6 +12,7 @@ class EmailsenderApplication
 		val EmailSenderService = EmailSenderService()
 
 		EmailSenderService.sendSimpleEmail(args[0] + "@" + args[1], "Email-Reset", "Hier erhalten sie einen Link zum zurücksetzten ihrer Email")
+		//TODO Impletement reset link
 	}
 
 
