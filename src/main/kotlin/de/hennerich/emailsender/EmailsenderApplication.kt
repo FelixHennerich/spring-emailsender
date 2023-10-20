@@ -9,6 +9,7 @@ class EmailsenderApplication
 
 
 /**
+ * @param args -> Value form cmdline
  * @sample java -jar FileName.jar test test.de 12345678
  */
 
