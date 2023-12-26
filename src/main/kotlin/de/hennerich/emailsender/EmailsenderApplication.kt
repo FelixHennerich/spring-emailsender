@@ -24,8 +24,9 @@ fun main(args: Array<String>) {
 			text = """
 				Hey, you just requested a password reset link. Just click on the following link if you have just applied for the link.
 				If you have no knowledge of this, you do not need to take any action as this link will become invalid within 24 hours.
-
-				Here is your link: http://$ip/passwordreset.php?resetID=$requestid"""
+			
+				Here is your link: $ip/passwordreset.php?resetID=$requestid
+			""".trimIndent()
 		)
 		//TODO Impletement reset link
 	}

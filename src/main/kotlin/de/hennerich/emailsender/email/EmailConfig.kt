@@ -1,6 +1,6 @@
 package de.hennerich.emailsender.email
 
-import de.hennerich.emailsender.hideproperties.Properties
+import de.hennerich.emailsender.properties.Properties
 import org.springframework.context.annotation.Bean
 import org.springframework.context.annotation.Configuration
 import org.springframework.mail.javamail.JavaMailSender
